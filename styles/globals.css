@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  
+  --foreground-rgb: 50, 50, 50; /* Adjusted text color for better contrast */
+  --background-rgb: 240, 240, 240; /* Single background color */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-rgb: 30, 30, 30;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  
+  background-color: rgb(var(--background-rgb)); /* Set a single background color */
+  font-family: 'Lato', sans-serif; /* Set font family to Lato */
+  font-weight: 400; /* Adjust font weight */
+}
