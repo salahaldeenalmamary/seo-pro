@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import Testimonials from "@/components/Testimonials";
 import Heading from "../components/ui/Heading";
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { motion } from "framer-motion";
 
 
@@ -47,7 +47,19 @@ export default function Services({
   arFooterData, 
   initialLang 
 }) {
-  const [lang, setLang] = useLanguage(initialLang);
+
+  const [lang, setLang] = useState(initialLang);
+  useEffect(() => {
+    const storedLang = localStorage.getItem("lang");
+    if (storedLang) {
+      setLang(storedLang);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("lang", lang);
+  }, [lang]);
+  
 
   const navData = lang === "ar" ? arNavData : enNavData;
   const heroData = lang === "ar" ? arHeroData : enHeroData;
