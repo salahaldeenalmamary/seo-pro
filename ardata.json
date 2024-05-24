@@ -1,0 +1,213 @@
+{
+    "navData": [
+      { "name": "الرئيسية", "href": "/", "submenu": false },
+      { "name": "حول", "href": "/about", "submenu": false },
+      { "name": "الخدمات", "href": "/services", "submenu": false },
+      { "name": "المشاريع", "href": "/projects", "submenu": false },
+      {
+        "name": "الصفحات",
+        "href": "/",
+        "submenu": true,
+        "sublinks": [
+          { "name": "الشهادات", "href": "/testimonials" },
+          { "name": "فريقنا", "href": "/our-team" }
+        ]
+      },
+      { "name": "اتصل", "href": "/contact", "submenu": false }
+    ],
+    
+      "heroData": {
+        "title": "أداة واحدة لتحسين SEO وتعزيز نمو عملك بسرعة",
+        "paragraph": "احصل على تيمبور ريبوم، الذي يوفر كل ما تحتاجه لتحسين SEO بسرعة وفعالية. يحتوي على أدوات متقدمة وتقنيات مبتكرة لضمان تحقيق أقصى استفادة من جهودك في التسويق عبر الإنترنت. ابدأ اليوم واحصل على عرض سعر مجاني!",
+        "heroImg": "/images/seo-3.svg",
+        "btnText1": "احصل على عرض سعر مجاني",
+        "btnText2": "تواصل معنا"
+      },
+      "aboutData": {
+        "title": "معلومات عنا",
+        "subtitle": "أفضل حلول SEO مع خبرة تزيد عن 10 سنوات",
+        "paragraph": "نحن في تيمبور ملتزمون بتقديم أفضل الحلول في مجال تحسين محركات البحث مع أكثر من عقد من الخبرة. نقدم استشارات مخصصة وحلول مبتكرة لتلبية احتياجات عملك بدقة وفاعلية. تعرف على فريقنا وابدأ رحلتك نحو النجاح اليوم!",
+        "achievements": [
+          "فائزون بجوائز عدة",
+          "فريق محترف ومدرب",
+          "دعم على مدار الساعة",
+          "أسعار تنافسية"
+        ],
+        "btnText": "اقرأ المزيد",
+        "aboutImg": "/images/seo-1.svg"
+      },
+      "servicesData": {
+        "title": "خدماتنا",
+        "subtitle": "تعرف على خدماتنا المتنوعة",
+        "ourServices": [
+          {
+            "id": "service1",
+            "title": "تحسين SEO",
+            "text": "نحن نوفر أحدث التقنيات والاستراتيجيات لتحسين موقعك على محركات البحث، مما يضمن رؤية أفضل وزيادة في حركة المرور إلى موقعك.",
+            "btnText": "اقرأ المزيد"
+          },
+          {
+            "id": "service2",
+            "title": "تصميم مواقع الويب",
+            "text": "نقدم تصاميم مواقع ويب مبتكرة وجذابة تتماشى مع متطلبات عملك وتعزز تجربة مستخدمي الموقع.",
+            "btnText": "اقرأ المزيد"
+          },
+          {
+            "id": "service3",
+            "title": "التسويق عبر وسائل التواصل الاجتماعي",
+            "text": "نقدم حملات تسويقية متكاملة عبر وسائل التواصل الاجتماعي لزيادة تواجدك الرقمي وبناء جمهور مستهدف.",
+            "btnText": "اقرأ المزيد"
+          },
+          {
+            "id": "service4",
+            "title": "التسويق عبر البريد الإلكتروني",
+            "text": "نقدم استراتيجيات تسويقية فعّالة عبر البريد الإلكتروني للتواصل مع جمهورك بشكل مباشر وفعّال.",
+            "btnText": "اقرأ المزيد"
+          },
+          {
+            "id": "service5",
+            "title": "الإعلان عبر النقر الدفعي",
+            "text": "نقدم حملات إعلانية عبر النقر الدفعي مستهدفة وفعّالة لزيادة التحويلات وتحقيق أهدافك الإعلانية.",
+            "btnText": "اقرأ المزيد"
+          },
+          {
+            "id": "service6",
+            "title": "تطوير التطبيقات",
+            "text": "نوفر خدمات تطوير تطبيقات متميزة تلبي احتياجات عملك وتضمن تجربة مستخدم مميزة ومريحة.",
+            "btnText": "اقرأ المزيد"
+          }
+        ]
+      },
+    
+    
+      "projectsData": {
+        "title": "مشاريعنا",
+        "subtitle": "المشاريع التي تم إطلاقها مؤخرًا",
+        "categories": ["الكل", "التصميم", "التطوير"],
+        "ourProjects": [
+          {
+            "id": "project1",
+            "name": "اسم المشروع1",
+            "category": "التطوير",
+            "img": "/images/project-1.jpg"
+          },
+          {
+            "id": "project2",
+            "name": "اسم المشروع2",
+            "category": "التصميم",
+            "img": "/images/project-2.jpg"
+          },
+          {
+            "id": "project3",
+            "name": "اسم المشروع3",
+            "category": "التصميم",
+            "img": "/images/project-3.jpg"
+          },
+          {
+            "id": "project4",
+            "name": "اسم المشروع4",
+            "category": "التطوير",
+            "img": "/images/project-4.jpg"
+          },
+          {
+            "id": "project5",
+            "name": "اسم المشروع5",
+            "category": "التصميم",
+            "img": "/images/project-5.jpg"
+          },
+          {
+            "id": "project6",
+            "name": "اسم المشروع6",
+            "category": "التطوير",
+            "img": "/images/project-6.jpg"
+          }
+        ]
+      },
+      "testimonialsData": {
+        "title": "الشهادات",
+        "subtitle": "آراء عملائنا",
+        "clients": [
+          {
+            "id": "client1",
+            "message": "asp.net core ",
+            "image": "/images/asp.net.png",
+            "name": " متوسط الخبرة",
+            "position": "مدة الخبرة 1 سنة"
+          },
+          {
+            "id": "client2",
+            "message": "React js ",
+            "image": "/images/reactjs.png",
+            "name": " متوسط الخبرة",
+            "position": "مدة الخبرة 1 سنة"
+          },
+          {
+            "id": "client3",
+            "message": "Next js ",
+            "image": "/images/nextjs.png",
+            "name": " متوسط الخبرة",
+            "position": "مدة الخبرة 1 سنة"
+          },
+          {
+            "id": "client4",
+            "message": "flutter ",
+            "image": "/images/flutter.png",
+            "name": "  الخبرة",
+            "position": "مدة الخبرة 2 سنة"
+          },
+          {
+            "id": "client5",
+            "message": "asp.net core ",
+            "image": "/images/asp.net.png",
+            "name": " متوسط الخبرة",
+            "position": "مدة الخبرة 1 سنة"
+          },
+          {
+            "id": "client6",
+            "message": "asp.net core ",
+            "image": "/images/asp.net.png",
+            "name": " متوسط الخبرة",
+            "position": "مدة الخبرة 1 سنة"
+          }
+        ]
+      },
+    
+      "teamsData": {
+        "title": "فريقنا",
+        "subtitle": "تعرف على أعضاء فريقنا",
+        "members": [
+          {
+            "id": "member1",
+            "name": "جون دو",
+            "position": "المدير التنفيذي",
+            "img": "/images/team-1.jpg"
+          },
+          {
+            "id": "member2",
+            "name": "إيما ويليام",
+            "position": "مدير",
+            "img": "/images/team-2.jpg"
+          },
+          {
+            "id": "member3",
+            "name": "نواه مايكل",
+            "position": "مصمم",
+            "img": "/images/team-3.jpg"
+          }
+        ]
+      },
+    
+      "contactData": {
+        "title": "اتصل بنا",
+        "subtitle": "اتصل لأي استفسار"
+      },
+    
+      "footerData": {
+        "titles": ["تواصل معنا", "روابط شائعة", "معرض المشاريع", "النشرة الإخبارية"],
+        "getInTouch": ["123 شارع، صنعاء، اليمن", "+967 714846856", "mail@domain.com"],
+        "popularLink": ["من نحن", "اتصل بنا", "سياسة الخصوصية", "الشروط والأحكام", "الوظائف"],
+        "projectGallery": ["/images/project-1.jpg", "/images/project-2.jpg", "/images/project-3.jpg", "/images/project-4.jpg", "/images/project-5.jpg", "/images/project-6.jpg"],
+        "newsLetter": "اشترك في النشرة الإخبارية لتصلك آخر الأخبار والعروض الترويجية",
+        "assets": ["الرئيسية", "ملفات تعريف الارتباط", "مساعدة", "أسئلة متكررة"]
+      }
+      }

@@ -4,7 +4,7 @@ import NavLinks from "./NavLinks";
 
 export default function NavbarMobile({ navData }) {
   return (
-    <nav className="p-4">
+    <nav className="p-4 ">
       <ul className="flex flex-col gap-y-4">
         {navData.map((item) => (
           <li key={item.name}>

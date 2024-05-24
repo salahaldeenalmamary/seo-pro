@@ -24,3 +24,28 @@ body {
   font-family: 'Lato', sans-serif; /* Set font family to Lato */
   font-weight: 400; /* Adjust font weight */
 }
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+
+.scroll-to-top.show {
+  opacity: 1;
+}
+
+.scroll-to-top.hide {
+  opacity: 0;
+}

@@ -1,19 +1,26 @@
 import Header from "@/components/Header";
 import Testimonials from "@/components/Testimonials";
 import Heading from "../components/ui/Heading";
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { useLanguage } from "../hooks/useLanguage";
 
-import { navData, heroData, testimonialsData, footerData } from "../data.json";
+import { navData as enNavData, heroData as enHeroData, testimonialsData as enTestimonialsData, footerData as enFooterData } from "../data.json";
+import { navData as arNavData, heroData as arHeroData, testimonialsData as arTestimonialsData, footerData as arFooterData } from "../ardata.json";
 import Footer from "@/components/Footer";
 
 export async function getStaticProps() {
   return {
     props: {
-      navData,
-      heroData,
-      testimonialsData,
-      footerData,
+      enNavData,
+      enHeroData,
+      enTestimonialsData,
+      enFooterData,
+      arNavData,
+      arHeroData,
+      arTestimonialsData,
+      arFooterData,
+      initialLang: "en",
     },
   };
 }
@@ -30,12 +37,24 @@ const pageTextContainerVariants = {
   },
 };
 
-export default function services({
-  navData,
-  heroData,
-  testimonialsData,
-  footerData,
+export default function Services({ 
+  enNavData, 
+  enHeroData, 
+  enTestimonialsData, 
+  enFooterData, 
+  arNavData, 
+  arHeroData, 
+  arTestimonialsData, 
+  arFooterData, 
+  initialLang 
 }) {
+  const [lang, setLang] = useLanguage(initialLang);
+
+  const navData = lang === "ar" ? arNavData : enNavData;
+  const heroData = lang === "ar" ? arHeroData : enHeroData;
+  const testimonialsData = lang === "ar" ? arTestimonialsData : enTestimonialsData;
+  const footerData = lang === "ar" ? arFooterData : enFooterData;
+
   return (
     <div className="overflow-hidden max-w-[1600px] mx-auto ">
       <section className="bg-primary min-h-fit">
@@ -60,7 +79,7 @@ export default function services({
         ></path>
       </svg>
       <div className="text-center">
-        <Heading>{testimonialsData}</Heading>
+        <Heading>{testimonialsData.title}</Heading>
       </div>
       <Testimonials testimonialsData={testimonialsData}></Testimonials>
       <Footer footerData={footerData}></Footer>

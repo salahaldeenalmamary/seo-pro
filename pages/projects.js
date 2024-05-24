@@ -1,19 +1,26 @@
 import Header from "@/components/Header";
 import Services from "@/components/Services";
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-
-import { navData, heroData, projectsData, footerData } from "../data.json";
+import ScrollToTop from "../components/scroollUp";
+import { navData as enNavData, heroData as enHeroData, projectsData as enProjectsData, footerData as enFooterData } from "../data.json";
+import { navData as arNavData, heroData as arHeroData, projectsData as arProjectsData, footerData as arFooterData } from "../ardata.json";
 import Projects from "@/components/Projects";
 import Footer from "@/components/Footer";
+import LanguageSwitcher from "../components/ui/LanguageSwitcher";
 
 export async function getStaticProps() {
   return {
     props: {
-      navData,
-      heroData,
-      projectsData,
-      footerData,
+      enNavData,
+      enHeroData,
+      enProjectsData,
+      enFooterData,
+      arNavData,
+      arHeroData,
+      arProjectsData,
+      arFooterData,
+      initialLang: "en",
     },
   };
 }
@@ -30,22 +37,53 @@ const pageTextContainerVariants = {
   },
 };
 
-export default function services({
-  navData,
-  heroData,
-  projectsData,
-  footerData,
+function useLangState(initialLang) {
+  const [lang, setLang] = React.useState(initialLang);
+
+  useEffect(() => {
+    const storedLang = localStorage.getItem("lang");
+    if (storedLang) {
+      setLang(storedLang);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("lang", lang);
+  }, [lang]);
+
+  return lang;
+}
+
+export default function ServicesPage({
+  enNavData,
+  enHeroData,
+  enProjectsData,
+  enFooterData,
+  arNavData,
+  arHeroData,
+  arProjectsData,
+  arFooterData,
+  initialLang,
 }) {
+  const lang = useLangState(initialLang);
+
+  const navData = lang === "ar" ? arNavData : enNavData;
+  const heroData = lang === "ar" ? arHeroData : enHeroData;
+  const projectsData = lang === "ar" ? arProjectsData : enProjectsData;
+  const footerData = lang === "ar" ? arFooterData : enFooterData;
+
   return (
-    <div className="overflow-hidden max-w-[1600px] mx-auto ">
+    <div className="overflow-hidden max-w-[1600px] mx-auto">
       <section className="bg-primary min-h-fit">
         <div className="container mx-auto relative min-h-fit">
+          <ScrollToTop />
           <Header navData={navData} heroData={heroData}></Header>
+          <LanguageSwitcher currentLang={lang} setLang={setLang} />
           <motion.h1
             variants={pageTextContainerVariants}
             initial="hidden"
             animate="visible"
-            className="pt-60 mb-2 text-center text-3xl  text-white"
+            className="pt-60 mb-2 text-center text-3xl text-white"
           >
             {projectsData.title}
           </motion.h1>

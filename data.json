@@ -1,213 +1,207 @@
 {
   "navData": [
-    { "name": "الرئيسية", "href": "/", "submenu": false },
-    { "name": "حول", "href": "/about", "submenu": false },
-    { "name": "الخدمات", "href": "/services", "submenu": false },
-    { "name": "المشاريع", "href": "/projects", "submenu": false },
+    { "name": "Home", "href": "/", "submenu": false },
+    { "name": "About", "href": "/about", "submenu": false },
+    { "name": "Services", "href": "/services", "submenu": false },
+    { "name": "Projects", "href": "/projects", "submenu": false },
     {
-      "name": "الصفحات",
+      "name": "Pages",
       "href": "/",
       "submenu": true,
       "sublinks": [
-        { "name": "الشهادات", "href": "/testimonials" },
-        { "name": "فريقنا", "href": "/our-team" }
+        { "name": "Testimonials", "href": "/testimonials" },
+        { "name": "Our Team", "href": "/our-team" }
       ]
     },
-    { "name": "اتصل", "href": "/contact", "submenu": false }
+    { "name": "Contact", "href": "/contact", "submenu": false }
   ],
-  
-    "heroData": {
-      "title": "أداة واحدة لتحسين SEO وتعزيز نمو عملك بسرعة",
-      "paragraph": "احصل على تيمبور ريبوم، الذي يوفر كل ما تحتاجه لتحسين SEO بسرعة وفعالية. يحتوي على أدوات متقدمة وتقنيات مبتكرة لضمان تحقيق أقصى استفادة من جهودك في التسويق عبر الإنترنت. ابدأ اليوم واحصل على عرض سعر مجاني!",
-      "heroImg": "/images/seo-3.svg",
-      "btnText1": "احصل على عرض سعر مجاني",
-      "btnText2": "تواصل معنا"
-    },
-    "aboutData": {
-      "title": "معلومات عنا",
-      "subtitle": "أفضل حلول SEO مع خبرة تزيد عن 10 سنوات",
-      "paragraph": "نحن في تيمبور ملتزمون بتقديم أفضل الحلول في مجال تحسين محركات البحث مع أكثر من عقد من الخبرة. نقدم استشارات مخصصة وحلول مبتكرة لتلبية احتياجات عملك بدقة وفاعلية. تعرف على فريقنا وابدأ رحلتك نحو النجاح اليوم!",
-      "achievements": [
-        "فائزون بجوائز عدة",
-        "فريق محترف ومدرب",
-        "دعم على مدار الساعة",
-        "أسعار تنافسية"
-      ],
-      "btnText": "اقرأ المزيد",
-      "aboutImg": "/images/seo-1.svg"
-    },
-    "servicesData": {
-      "title": "خدماتنا",
-      "subtitle": "تعرف على خدماتنا المتنوعة",
-      "ourServices": [
-        {
-          "id": "service1",
-          "title": "تحسين SEO",
-          "text": "نحن نوفر أحدث التقنيات والاستراتيجيات لتحسين موقعك على محركات البحث، مما يضمن رؤية أفضل وزيادة في حركة المرور إلى موقعك.",
-          "btnText": "اقرأ المزيد"
-        },
-        {
-          "id": "service2",
-          "title": "تصميم مواقع الويب",
-          "text": "نقدم تصاميم مواقع ويب مبتكرة وجذابة تتماشى مع متطلبات عملك وتعزز تجربة مستخدمي الموقع.",
-          "btnText": "اقرأ المزيد"
-        },
-        {
-          "id": "service3",
-          "title": "التسويق عبر وسائل التواصل الاجتماعي",
-          "text": "نقدم حملات تسويقية متكاملة عبر وسائل التواصل الاجتماعي لزيادة تواجدك الرقمي وبناء جمهور مستهدف.",
-          "btnText": "اقرأ المزيد"
-        },
-        {
-          "id": "service4",
-          "title": "التسويق عبر البريد الإلكتروني",
-          "text": "نقدم استراتيجيات تسويقية فعّالة عبر البريد الإلكتروني للتواصل مع جمهورك بشكل مباشر وفعّال.",
-          "btnText": "اقرأ المزيد"
-        },
-        {
-          "id": "service5",
-          "title": "الإعلان عبر النقر الدفعي",
-          "text": "نقدم حملات إعلانية عبر النقر الدفعي مستهدفة وفعّالة لزيادة التحويلات وتحقيق أهدافك الإعلانية.",
-          "btnText": "اقرأ المزيد"
-        },
-        {
-          "id": "service6",
-          "title": "تطوير التطبيقات",
-          "text": "نوفر خدمات تطوير تطبيقات متميزة تلبي احتياجات عملك وتضمن تجربة مستخدم مميزة ومريحة.",
-          "btnText": "اقرأ المزيد"
-        }
-      ]
-    },
-  
-  
-    "projectsData": {
-      "title": "مشاريعنا",
-      "subtitle": "المشاريع التي تم إطلاقها مؤخرًا",
-      "categories": ["الكل", "التصميم", "التطوير"],
-      "ourProjects": [
-        {
-          "id": "project1",
-          "name": "اسم المشروع1",
-          "category": "التطوير",
-          "img": "/images/project-1.jpg"
-        },
-        {
-          "id": "project2",
-          "name": "اسم المشروع2",
-          "category": "التصميم",
-          "img": "/images/project-2.jpg"
-        },
-        {
-          "id": "project3",
-          "name": "اسم المشروع3",
-          "category": "التصميم",
-          "img": "/images/project-3.jpg"
-        },
-        {
-          "id": "project4",
-          "name": "اسم المشروع4",
-          "category": "التطوير",
-          "img": "/images/project-4.jpg"
-        },
-        {
-          "id": "project5",
-          "name": "اسم المشروع5",
-          "category": "التصميم",
-          "img": "/images/project-5.jpg"
-        },
-        {
-          "id": "project6",
-          "name": "اسم المشروع6",
-          "category": "التطوير",
-          "img": "/images/project-6.jpg"
-        }
-      ]
-    },
-    "testimonialsData": {
-      "title": "الشهادات",
-      "subtitle": "آراء عملائنا",
-      "clients": [
-        {
-          "id": "client1",
-          "message": "لوريم إيبسوم دولور سيت أميت...",
-          "image": "/images/client-1.jpg",
-          "name": "إسحاق بيترسون",
-          "position": "المهنة"
-        },
-        {
-          "id": "client2",
-          "message": "لوريم إيبسوم دولور سيت أميت...",
-          "image": "/images/client-2.jpg",
-          "name": "سيمون ساندبرج",
-          "position": "المهنة"
-        },
-        {
-          "id": "client3",
-          "message": "لوريم إيبسوم دولور سيت أميت...",
-          "image": "/images/client-3.jpg",
-          "name": "ميليسا دو",
-          "position": "المهنة"
-        },
-        {
-          "id": "client4",
-          "message": "لوريم إيبسوم دولور سيت أميت...",
-          "image": "/images/client-4.jpg",
-          "name": "السيد جون",
-          "position": "المهنة"
-        },
-        {
-          "id": "client5",
-          "message": "لوريم إيبسوم دولور سيت أميت...",
-          "image": "/images/client-5.jpg",
-          "name": "السيدة روز",
-          "position": "المهنة"
-        },
-        {
-          "id": "client6",
-          "message": "لوريم إيبسوم دولور سيت أميت...",
-          "image": "/images/client-6.jpg",
-          "name": "بيتر تريكي",
-          "position": "المهنة"
-        }
-      ]
-    },
-  
-    "teamsData": {
-      "title": "فريقنا",
-      "subtitle": "تعرف على أعضاء فريقنا",
-      "members": [
-        {
-          "id": "member1",
-          "name": "جون دو",
-          "position": "المدير التنفيذي",
-          "img": "/images/team-1.jpg"
-        },
-        {
-          "id": "member2",
-          "name": "إيما ويليام",
-          "position": "مدير",
-          "img": "/images/team-2.jpg"
-        },
-        {
-          "id": "member3",
-          "name": "نواه مايكل",
-          "position": "مصمم",
-          "img": "/images/team-3.jpg"
-        }
-      ]
-    },
-  
-    "contactData": {
-      "title": "اتصل بنا",
-      "subtitle": "اتصل لأي استفسار"
-    },
-  
-    "footerData": {
-      "titles": ["تواصل معنا", "روابط شائعة", "معرض المشاريع", "النشرة الإخبارية"],
-      "getInTouch": ["123 شارع، صنعاء، اليمن", "+967 714846856", "mail@domain.com"],
-      "popularLink": ["من نحن", "اتصل بنا", "سياسة الخصوصية", "الشروط والأحكام", "الوظائف"],
-      "projectGallery": ["/images/project-1.jpg", "/images/project-2.jpg", "/images/project-3.jpg", "/images/project-4.jpg", "/images/project-5.jpg", "/images/project-6.jpg"],
-      "newsLetter": "اشترك في النشرة الإخبارية لتصلك آخر الأخبار والعروض الترويجية",
-      "assets": ["الرئيسية", "ملفات تعريف الارتباط", "مساعدة", "أسئلة متكررة"]
-    }
-    }
+  "heroData": {
+    "title": "One Tool to Boost Your SEO and Grow Your Business Quickly",
+    "paragraph": "Get Temborium, which provides everything you need to improve SEO quickly and effectively. It features advanced tools and innovative techniques to ensure maximum benefits from your online marketing efforts. Start today and get a free quote!",
+    "heroImg": "/images/seo-3.svg",
+    "btnText1": "Get a Free Quote",
+    "btnText2": "Contact Us"
+  },
+  "aboutData": {
+    "title": "About Us",
+    "subtitle": "Best SEO Solutions with Over 10 Years of Experience",
+    "paragraph": "At Temborium, we are committed to providing the best solutions in the field of search engine optimization with over a decade of experience. We offer customized consultations and innovative solutions to meet your business needs accurately and effectively. Get to know our team and start your journey to success today!",
+    "achievements": [
+      "Multiple Award Winners",
+      "Professional and Trained Team",
+      "24/7 Support",
+      "Competitive Prices"
+    ],
+    "btnText": "Read More",
+    "aboutImg": "/images/seo-1.svg"
+  },
+  "servicesData": {
+    "title": "Our Services",
+    "subtitle": "Discover Our Diverse Services",
+    "ourServices": [
+      {
+        "id": "service1",
+        "title": "SEO Improvement",
+        "text": "We provide the latest technologies and strategies to improve your website's search engine ranking, ensuring better visibility and increased traffic to your site.",
+        "btnText": "Read More"
+      },
+      {
+        "id": "service2",
+        "title": "Website Design",
+        "text": "We offer innovative and attractive website designs that align with your business requirements and enhance the user experience.",
+        "btnText": "Read More"
+      },
+      {
+        "id": "service3",
+        "title": "Social Media Marketing",
+        "text": "We offer integrated social media marketing campaigns to increase your digital presence and build a targeted audience.",
+        "btnText": "Read More"
+      },
+      {
+        "id": "service4",
+        "title": "Email Marketing",
+        "text": "We provide effective email marketing strategies to communicate directly and effectively with your audience.",
+        "btnText": "Read More"
+      },
+      {
+        "id": "service5",
+        "title": "Pay-Per-Click Advertising",
+        "text": "We offer targeted and effective pay-per-click advertising campaigns to increase conversions and achieve your advertising goals.",
+        "btnText": "Read More"
+      },
+      {
+        "id": "service6",
+        "title": "App Development",
+        "text": "We provide outstanding app development services that meet your business needs and ensure a unique and comfortable user experience.",
+        "btnText": "Read More"
+      }
+    ]
+  },
+  "projectsData": {
+    "title": "Our Projects",
+    "subtitle": "Recently Launched Projects",
+    "categories": ["All", "Design", "Development"],
+    "ourProjects": [
+      {
+        "id": "project1",
+        "name": "Project Name1",
+        "category": "Development",
+        "img": "/images/project-1.jpg"
+      },
+      {
+        "id": "project2",
+        "name": "Project Name2",
+        "category": "Design",
+        "img": "/images/project-2.jpg"
+      },
+      {
+        "id": "project3",
+        "name": "Project Name3",
+        "category": "Design",
+        "img": "/images/project-3.jpg"
+      },
+      {
+        "id": "project4",
+        "name": "Project Name4",
+        "category": "Development",
+        "img": "/images/project-4.jpg"
+      },
+      {
+        "id": "project5",
+        "name": "Project Name5",
+        "category": "Design",
+        "img": "/images/project-5.jpg"
+      },
+      {
+        "id": "project6",
+        "name": "Project Name6",
+        "category": "Development",
+        "img": "/images/project-6.jpg"
+      }
+    ]
+  },
+  "testimonialsData": {
+    "title": "Testimonials",
+    "subtitle": "Our Clients' Reviews",
+    "clients": [
+      {
+        "id": "client1",
+        "message": "asp.net core",
+        "image": "/images/asp.net.png",
+        "name": "Average Experience",
+        "position": "Experience Duration: 1 year"
+      },
+      {
+        "id": "client2",
+        "message": "React js",
+        "image": "/images/reactjs.png",
+        "name": "Average Experience",
+        "position": "Experience Duration: 1 year"
+      },
+      {
+        "id": "client3",
+        "message": "Next js",
+        "image": "/images/nextjs.png",
+        "name": "Average Experience",
+        "position": "Experience Duration: 1 year"
+      },
+      {
+        "id": "client4",
+        "message": "flutter",
+        "image": "/images/flutter.png",
+        "name": "Experience",
+        "position": "Experience Duration: 2 years"
+      },
+      {
+        "id": "client5",
+        "message": "asp.net core",
+        "image": "/images/asp.net.png",
+        "name": "Average Experience",
+        "position": "Experience Duration: 1 year"
+      },
+      {
+        "id": "client6",
+        "message": "asp.net core",
+        "image": "/images/asp.net.png",
+        "name": "Average Experience",
+        "position": "Experience Duration: 1 year"
+      }
+    ]
+  },
+  "teamsData": {
+    "title": "Our Team",
+    "subtitle": "Get to Know Our Team Members",
+    "members": [
+      {
+        "id": "member1",
+        "name": "John Doe",
+        "position": "CEO",
+        "img": "/images/team-1.jpg"
+      },
+      {
+        "id": "member2",
+        "name": "Emma Williams",
+        "position": "Manager",
+        "img": "/images/team-2.jpg"
+      },
+      {
+        "id": "member3",
+        "name": "Noah Michael",
+        "position": "Designer",
+        "img": "/images/team-3.jpg"
+      }
+    ]
+  },
+  "contactData": {
+    "title": "Contact Us",
+    "subtitle": "Contact Us for Any Inquiry"
+  },
+  "footerData": {
+    "titles": ["Contact Us", "Popular Links", "Project Gallery", "Newsletter"],
+    "getInTouch": ["123 Street, Sana'a, Yemen", "+967 714846856", "mail@domain.com"],
+    "popularLink": ["About Us", "Contact Us", "Privacy Policy", "Terms & Conditions", "Careers"],
+    "projectGallery": ["/images/project-1.jpg", "/images/project-2.jpg", "/images/project-3.jpg", "/images/project-4.jpg", "/images/project-5.jpg", "/images/project-6.jpg"],
+    "newsLetter": "Subscribe to the newsletter to receive the latest news and promotional offers",
+    "assets": ["Home", "Cookies", "Help", "FAQ"]
+  }
+}
