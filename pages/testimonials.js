@@ -3,7 +3,7 @@ import Testimonials from "@/components/Testimonials";
 import Heading from "../components/ui/Heading";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { useLanguage } from "../hooks/useLanguage";
+
 
 import { navData as enNavData, heroData as enHeroData, testimonialsData as enTestimonialsData, footerData as enFooterData } from "../data.json";
 import { navData as arNavData, heroData as arHeroData, testimonialsData as arTestimonialsData, footerData as arFooterData } from "../ardata.json";
