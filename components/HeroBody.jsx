@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import React from "react";
 import Image from "next/image";
 import { heroVariants } from "../constants";
+import withTranslation from './ui/withTranslation';
+
 const {
   containerVariants,
   childrenVariants,
@@ -9,7 +11,7 @@ const {
   rightButtonVariants,
 } = heroVariants;
 
-export default function HeroBody({ heroData }) {
+ function HeroBody({ heroData }) {
   return (
     <section className="pt-40 xl:w-full w-4/5 text-white mx-auto">
       <motion.div
@@ -65,3 +67,5 @@ export default function HeroBody({ heroData }) {
     </section>
   );
 }
+
+export default withTranslation(HeroBody);

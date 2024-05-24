@@ -49,7 +49,7 @@ export default function Home({
       <Services servicesData={servicesData}></Services>
       <Projects projectsData={projectsData}></Projects>
       <Testimonials testimonialsData={testimonialsData}></Testimonials>
-      <Teams teamsData={teamsData}></Teams>
+      {/* <Teams teamsData={teamsData}></Teams> */}
       <Footer footerData={footerData}></Footer>
     </div>
   );

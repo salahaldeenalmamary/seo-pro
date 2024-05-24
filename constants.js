@@ -21,7 +21,7 @@ const globalVariants = {
       y: 0,
       opacity: 1,
       transition: {
-        duration: 1.5,
+        duration: 2.5,
         type: "spring",
         stiffness: 20,
       },
@@ -37,6 +37,20 @@ const globalVariants = {
       opacity: 1,
       transition: {
         duration: 1,
+        type: "tween",
+      },
+    },
+  },
+  fadeZoomInVariants1: {
+    hidden: {
+      scale: 0.5,
+      opacity: 0,
+    },
+    visible: {
+      scale: 1,
+      opacity: 1,
+      transition: {
+        duration: 2,
         type: "tween",
       },
     },

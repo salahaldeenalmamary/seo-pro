@@ -13,10 +13,12 @@ import {
 import Button from "./ui/Button";
 import { motion } from "framer-motion";
 import { globalVariants } from "../constants";
+
 const { containerVariants, scrollUpVariants, fadeZoomInVariants } =
   globalVariants;
 
 export default function About({ aboutData }) {
+ 
   return (
     <div>
       <motion.div
@@ -82,7 +84,7 @@ export default function About({ aboutData }) {
               Ready to get started
             </h1>
             <p className="py-2 text-base lg:text-lg">
-              Diam elitr est dolore at sanctus nonumy.
+             
             </p>
             <div className="relative mt-2">
               <input

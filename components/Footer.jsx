@@ -4,73 +4,90 @@ import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import EmailIcon from "@mui/icons-material/Email";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import SendIcon from "@mui/icons-material/Send";
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaTwitter,
-  FaLinkedinIn,
-} from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn, FaWhatsapp, FaPhone } from "react-icons/fa";
 import { ImageList, ImageListItem, Typography } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import { heroVariants } from "../constants";
+const {
+  containerVariants,
+  childrenVariants,
+  leftButtonVariants,
+  rightButtonVariants,
+} = heroVariants;
 
 export default function Footer({ footerData }) {
+ 
   return (
     <div className="bg-primary text-white mt-20">
-      <div className="grid gap-6 lg:grid-cols-4 md:grid-cols-2 grid-cols-1 w-4/5 mx-auto py-20">
-        <div className="col-span-1">
+      <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false }}
+        className="grid gap-6 lg:grid-cols-4 md:grid-cols-2 grid-cols-1 w-4/5 mx-auto py-20"
+      >
+        <motion.div variants={childrenVariants}   viewport={{ once: false }} className="col-span-1">
           <Typography variant="h5" fontWeight={700} className="mb-4">
             Get In Touch
           </Typography>
           {footerData.getInTouch.map((item, index) => (
             <div key={index} className="py-2">
-              <LocationOnIcon></LocationOnIcon>
+              <LocationOnIcon />
               <span>{item}</span>
             </div>
           ))}
 
           <div className="flex gap-x-6 text-2xl my-6">
+            <a href="whatsapp://send?phone=+967714846856">
+              <FaWhatsapp />
+            </a>
+            <a href="tel:+967714846856">
+              <FaPhone />
+            </a>
             <FaFacebookF />
             <FaTwitter />
             <FaInstagram />
             <FaLinkedinIn />
           </div>
-        </div>
+        </motion.div>
 
-        <div className="col-span-1">
+        <motion.div variants={childrenVariants}   viewport={{ once: false }} className="col-span-1">
           <Typography variant="h5" fontWeight={700} className="mb-4">
             Popular Link
-          </Typography>{" "}
+          </Typography>
           {footerData.popularLink.map((item, index) => (
             <div key={index} className="py-2">
-              <KeyboardArrowRightIcon></KeyboardArrowRightIcon>
+              <KeyboardArrowRightIcon />
               <span className="capitalize">{item}</span>
             </div>
           ))}
-        </div>
+        </motion.div>
 
-        <div className="col-span-1">
+        <motion.div variants={childrenVariants}   viewport={{ once: false }} className="col-span-1">
           <Typography variant="h5" fontWeight={700} className="mb-4">
             Project Gallery
-          </Typography>{" "}
+          </Typography>
           <ImageList cols={3} sx={{ width: 200 }}>
             {footerData.projectGallery.map((item, index) => (
               <ImageListItem key={index}>
-                <Image alt={item} src={item} width={100} height={100}></Image>
+                <Image
+                  alt={item}
+                  src={item}
+                  width={100}
+                  height={100}
+                />
               </ImageListItem>
             ))}
           </ImageList>
-        </div>
+        </motion.div>
 
-        <div className="col-span-1">
+        <motion.div variants={childrenVariants}   viewport={{ once: false }} className="col-span-1">
           <Typography variant="h5" fontWeight={700} className="mb-4">
             Newsletter
-          </Typography>{" "}
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-            tenetur eum unde quia animi aspernatur explicabo consequuntur
-            incidunt itaque. Laborum, perferendis. Iusto, aliquam. Ex error
-          </p>
+          </Typography>
+          <p></p>
           <div className="mt-6">
             <input
               type="text"
@@ -78,26 +95,34 @@ export default function Footer({ footerData }) {
               className="text-black rounded-full py-3 px-4"
             />
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
       <hr className="w-4/5 mx-auto" />
-      <div className="md:flex md:justify-between w-4/5 mx-auto py-10">
-        <h6 className="text-center md:text-start">
+      <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+        className="md:flex md:justify-between w-4/5 mx-auto py-10"
+      >
+        <motion.h6 variants={childrenVariants}   viewport={{ once: false }} className="text-center md:text-start">
           ©{" "}
           <Link href="/" className="cursor-pointer">
-            Your Site name
+            {/* Add your site name or link here */}
           </Link>
-          , All Rights Reserved. Designed By{" "}
+          , All Rights Reserved. Designed By{" SalahAldeen Almamari"}
           <Link href="/" className="cursor-pointer">
-            HTML Codex
+            {/* Add your site name or link here */}
           </Link>
-        </h6>
-        <div className="flex gap-x-4 capitalize justify-center md:mt-0 mt-4">
+        </motion.h6>
+        <motion.div
+          variants={childrenVariants}
+          className="flex gap-x-4 capitalize justify-center md:mt-0 mt-4"
+        >
           {footerData.assets.map((item, index) => (
             <span key={index}>{item}</span>
           ))}
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </div>
   );
 }

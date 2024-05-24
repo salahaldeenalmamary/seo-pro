@@ -7,7 +7,7 @@ import { Typography } from "@mui/material";
 import Navbar from "./Navbar";
 import NavbarMobile from "./NavbarMobile";
 import Button from "./ui/Button";
-
+import LanguageSwitcher from "./ui/LanguageSwitcher";
 const containerVariants = {
   hidden: {
     opacity: 0,
@@ -66,7 +66,7 @@ export default function Header({ navData }) {
 
         <Button>Pro Version</Button>
       </div>
-
+<LanguageSwitcher></LanguageSwitcher>
       <div
         className="lg:hidden cursor-pointer"
         onClick={() => setNavMobile(!navMobile)}

@@ -10,6 +10,7 @@ const {
   childContainerVariants,
   scrollUpVariants,
   fadeZoomInVariants,
+  fadeZoomInVariants1
 } = globalVariants;
 
 export default function Services({ servicesData }) {
@@ -44,12 +45,18 @@ export default function Services({ servicesData }) {
             <FaHome className="text-4xl text-white group-hover:text-primary"></FaHome>
           </div>
           <div className="flex flex-col justify-center text-center gap-y-4">
-            <h1 className="font-bold text-2xl group-hover:text-white">
+          <motion.h1 initial="hidden"
+    whileInView="visible"
+
+    viewport={{ once: false }} variants={fadeZoomInVariants1} className="font-bold text-2xl group-hover:text-white">
               {item.title}
-            </h1>
-            <p className="text-gray-500 group-hover:text-white">
+            </motion.h1>
+            <motion.p initial="hidden"
+    whileInView="visible"
+
+    viewport={{ once: false }} variants={fadeZoomInVariants1}  className="text-gray-500 group-hover:text-white">
               {item.text}
-            </p>
+            </motion.p>
           </div>
           <button
             className="group-hover:before:w-full group-hover:before:bg-white group-hover:before:rounded-full 
@@ -64,9 +71,12 @@ export default function Services({ servicesData }) {
             before:rounded-[50%] 
             before:bg-slate-200"
           >
-            <span className="relative font-bold tracking-wider text-primary">
+            <motion.span initial="hidden"
+    whileInView="visible"
+
+    viewport={{ once: false }} className="relative font-bold tracking-wider text-primary">
               {item.btnText}
-            </span>
+            </motion.span>
           </button>
         </div>
       </motion.div>

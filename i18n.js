@@ -1,22 +1,24 @@
-import i18next from 'i18next'
-import { initReactI18next } from 'react-i18next'
+// i18n.js
 
-import translationEN from '@/locales/en/translation.json'
-import translationES from '@/locales/es/translation.json'
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
+import translationEN from './locales/en/translation.json';
+import translationES from './locales/ar/translation.json';
 
 const resources = {
-  en: {
-    translation: translationEN
-  },
-  es: {
-    translation: translationES
-  }
-}
+  en: { translation: translationEN },
+  ar: { translation: translationES }
+};
 
-i18next.use(initReactI18next).init({
-  resources,
-  lng: 'en',
-  fallbackLng: 'en'
-})
+i18n
+  .use(initReactI18next)
+  .init({
+    resources,
+    lng: 'en',
+    fallbackLng: 'en',
+    interpolation: {
+      escapeValue: false // React already protects from XSS
+    }
+  });
 
-export default i18next
+export default i18n;
