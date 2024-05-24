@@ -8,7 +8,6 @@ import { motion } from "framer-motion";
 import { navData as enNavData, heroData as enHeroData, testimonialsData as enTestimonialsData, footerData as enFooterData } from "../data.json";
 import { navData as arNavData, heroData as arHeroData, testimonialsData as arTestimonialsData, footerData as arFooterData } from "../ardata.json";
 import Footer from "@/components/Footer";
-
 export async function getStaticProps() {
   return {
     props: {
