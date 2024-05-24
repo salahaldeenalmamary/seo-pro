@@ -82,7 +82,7 @@ export default function ServicesPage({
       <section className="bg-primary min-h-fit">
         <div className="container mx-auto relative min-h-fit">
           <Header navData={nav} heroData={hero}></Header>
-          <LanguageSwitcher currentLang={lang} setLang={setLang} />
+       
           <motion.h1
             variants={pageTextContainerVariants}
             initial="hidden"

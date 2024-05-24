@@ -78,7 +78,7 @@ export default function ServicesPage({
         <div className="container mx-auto relative min-h-fit">
           <ScrollToTop />
           <Header navData={navData} heroData={heroData}></Header>
-          <LanguageSwitcher currentLang={lang} setLang={setLang} />
+        
           <motion.h1
             variants={pageTextContainerVariants}
             initial="hidden"

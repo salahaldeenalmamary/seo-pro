@@ -91,7 +91,7 @@ export default function Home({
   return (
     <div className="overflow-hidden max-w-[1600px] mx-auto bg-gray-50 text-black">
       <Hero navData={nav} heroData={hero}></Hero>
-      <LanguageSwitcher currentLang={lang} setLang={setLang} />
+      
       <About aboutData={about}></About>
       <Services servicesData={services}></Services>
       <Projects projectsData={projects}></Projects>
