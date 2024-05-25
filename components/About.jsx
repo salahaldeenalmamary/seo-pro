@@ -77,35 +77,7 @@ export default function About({ aboutData }) {
         </motion.div>
       </motion.div>
 
-      <div className="bg-primary text-white py-4 w-full my-10 lg:my-32 flex justify-center">
-        <div className="flex items-center w-4/5 lg:justify-between justify-center">
-          <div>
-            <h1 className="md:text-3xl text-2xl font-bold">
-              Ready to get started
-            </h1>
-            <p className="py-2 text-base lg:text-lg">
-             
-            </p>
-            <div className="relative mt-2">
-              <input
-                type="text"
-                placeholder="Enter Your Email"
-                className="relative text-black rounded-full py-3 px-4 md:w-[32rem]"
-              />
-              <SendIcon className="absolute text-primary top-2 right-8 md:right-4 -rotate-45 cursor-pointer"></SendIcon>
-            </div>
-          </div>
-          <div className="hidden lg:inline h-64">
-            <Image
-              src="/images/seo-6.svg"
-              width={500}
-              height={500}
-              alt="seo-illustration-image"
-              className="overflow-visible"
-            ></Image>
-          </div>
-        </div>
-      </div>
+     
     </div>
   );
 }

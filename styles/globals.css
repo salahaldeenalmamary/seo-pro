@@ -5,15 +5,16 @@
 @tailwind utilities;
 
 :root {
-  
+  --primary-color: 0, 123, 255; /* Adjust primary color */
   --foreground-rgb: 50, 50, 50; /* Adjusted text color for better contrast */
-  --background-rgb: 240, 240, 240; /* Single background color */
+  --background-rgb: 0, 123, 255; /* Single background color */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-rgb: 30, 30, 30;
+    --primary-color: 0, 123, 255; /* Adjust primary color */
+    --foreground-rgb: 50, 50, 50; /* Adjusted text color for better contrast */
+    --background-rgb: 0, 123, 255; /* Single background color */;
   }
 }
 
@@ -23,6 +24,14 @@ body {
   background-color: rgb(var(--background-rgb)); /* Set a single background color */
   font-family: 'Lato', sans-serif; /* Set font family to Lato */
   font-weight: 400; /* Adjust font weight */
+}
+.bg-primary{
+  background-color: #e86f13;
+  color: #fff;
+}
+.bg-primary:hover {
+  background-color: #e86f13;
+ 
 }
 .scroll-to-top {
   position: fixed;

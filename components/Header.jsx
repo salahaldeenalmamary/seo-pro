@@ -93,7 +93,7 @@ export default function Header({ navData }) {
         variants={navItemVariants}
       >
         <NavbarMobile navData={navData} />
-        <SearchIcon className="mx-4 my-5"></SearchIcon>
+      
       </motion.div>
     </motion.header>
   );

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import Image from "next/image";
-import { heroVariants } from "../constants";
+import { heroVariants,globalVariants } from "../constants";
 import withTranslation from './ui/withTranslation';
 
 const {
@@ -11,22 +11,22 @@ const {
   rightButtonVariants,
 } = heroVariants;
 
+
  function HeroBody({ heroData }) {
   return (
-    <section className="pt-40 xl:w-full w-4/5 text-white mx-auto">
+    <section className="bg-primary pt-40 xl:w-full w-4/5 text-white mx-auto">
       <motion.div
-        variants={containerVariants}
+        variants={globalVariants.fadeZoomInVariants}
         initial="hidden"
         animate="visible"
         className="lg:flex justify-center w-full items-center"
       >
         <div
-          initial="hidden"
-          animate="visible"
+         
           className="lg:w-1/2 lg:text-start text-center lg:mb-0 mb-10 flex flex-col gap-y-6"
         >
           <motion.Typography
-            variants={childrenVariants}
+            variants={globalVariants.fadeZoomInVariants}
             variant="h1"
             className="text-3xl xl:text-4xl font-bold"
             fontWeight={700}
@@ -56,12 +56,13 @@ const {
           </div>
         </div>
         <div className="flex justify-center" initial="hidden" animate="visible">
-          <Image
+          {/* <Image
             alt="seo-illustration-image"
             src={heroData.heroImg}
             width={600}
+            
             height={600}
-          ></Image>
+          ></Image> */}
         </div>
       </motion.div>
     </section>

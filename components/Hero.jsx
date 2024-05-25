@@ -5,7 +5,7 @@ import HeroBody from "./HeroBody";
 export default function Hero({ navData, heroData }) {
   return (
     <>
-      <section style={{ backgroundColor: "#24129B" }}
+      <section 
       className="bg-primary min-h-screen">
         <div className="container mx-auto relative min-h-screen">
           <Header navData={navData} heroData={heroData}></Header>

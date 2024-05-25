@@ -8,9 +8,9 @@ import ScrollAnimationWrapper from "./ScrollAnimationWrapper";
 const {
   containerVariants,
   childContainerVariants,
-  scrollUpVariants,
+  bounceVariants,
   fadeZoomInVariants,
-  fadeZoomInVariants1
+  
 } = globalVariants;
 
 export default function Services({ servicesData }) {
@@ -27,40 +27,43 @@ export default function Services({ servicesData }) {
   
   viewport={{ once: false }}
 >
-  <motion.div variants={scrollUpVariants} className="text-center">
+  <motion.div variants={bounceVariants} className="text-center">
     <Heading>{servicesData}</Heading>
   </motion.div>
   <motion.div
-    variants={childContainerVariants}
+    variants={bounceVariants}
     initial="hidden"
     whileInView="visible"
 
     viewport={{ once: false }}
-    className="lg:w-4/5 mx-auto grid md:grid-cols-2 xl:grid-cols-3 md:p-8 md:gap-6 p-4 gap-4"
+    className=" lg:w-4/5 mx-auto grid md:grid-cols-2 xl:grid-cols-3 md:p-8 md:gap-6 p-4 gap-4"
   >
     {servicesData.ourServices.map((item) => (
-      <motion.div variants={fadeZoomInVariants}  key={item.id}>
-        <div className="group cols-span-1 bg-white shadow-lg p-8 rounded-lg hover:bg-primary cursor-pointer transition-all duration-500">
-          <div className="bg-primary group-hover:bg-white w-20 h-20 rounded-[50%] flex justify-center items-center mx-auto my-4">
+      <motion.div variants={fadeZoomInVariants} className="hover:bg-primary"  key={item.id}>
+        <div className=" group cols-span-1 bg-white shadow-lg p-8 rounded-lg hover:bg-primary cursor-pointer transition-all duration-500">
+          <div className=" group-hover:bg-white w-20 h-20 rounded-[50%] flex justify-center items-center mx-auto my-4">
             <FaHome className="text-4xl text-white group-hover:text-primary"></FaHome>
           </div>
           <div className="flex flex-col justify-center text-center gap-y-4">
           <motion.h1 initial="hidden"
     whileInView="visible"
 
-    viewport={{ once: false }} variants={fadeZoomInVariants1} className="font-bold text-2xl group-hover:text-white">
+    viewport={{ once: false }} variants={bounceVariants} className="font-bold text-2xl group-hover:text-white">
               {item.title}
             </motion.h1>
             <motion.p initial="hidden"
     whileInView="visible"
 
-    viewport={{ once: false }} variants={fadeZoomInVariants1}  className="text-gray-500 group-hover:text-white">
+    viewport={{ once: false }} variants={bounceVariants}  className="text-gray-500 group-hover:text-white">
               {item.text}
             </motion.p>
           </div>
           <button
-            className="group-hover:before:w-full group-hover:before:bg-white group-hover:before:rounded-full 
+            className="group-hover:before:w-full 
+            group-hover:before:bg-white
+             group-hover:before:rounded-full 
             my-6 flex p-3  mx-auto relative 
+            
             before:absolute 
             before:transition-all 
             before:duration-300 

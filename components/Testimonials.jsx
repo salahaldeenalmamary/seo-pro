@@ -15,7 +15,7 @@ export default function Testimonials({ testimonialsData }) {
   SwiperCore.use([Autoplay]);
 
   return (
-    <motion.div
+    <motion.div 
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"
