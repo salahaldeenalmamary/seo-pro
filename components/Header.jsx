@@ -89,10 +89,11 @@ export default function Header({ navData }) {
       <motion.div
         className={`${
           navMobile ? "max-h-[500px]" : "max-h-0"
-        } lg:hidden max-w-[200px] bg-white text-black absolute top-full mt-2 w-full left-0 rounded-md overflow-hidden shadow-2xl transition-all duration-200`}
+        } lg:hidden max-w-[200px]  bg-white text-black absolute top-full mt-2 w-full left-3 rounded-md overflow-hidden shadow-2xl transition-all duration-200`}
         variants={navItemVariants}
       >
         <NavbarMobile navData={navData} />
+        <LanguageSwitcher/>
       
       </motion.div>
     </motion.header>

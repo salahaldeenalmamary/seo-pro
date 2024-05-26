@@ -14,10 +14,10 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: "#2124b1",
+        primary: "#1B0D96",
         secondary: "#ffffff",
         tint: "#FDEDE8",
-        paleBlue: "#638BF7",
+        paleBlue: "#D4337E",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

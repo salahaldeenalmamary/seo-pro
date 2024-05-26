@@ -5,14 +5,14 @@
 @tailwind utilities;
 
 :root {
-  --primary-color: 0, 123, 255; /* Adjust primary color */
+  --primary-color:#1B0D96; /* Adjust primary color */
   --foreground-rgb: 50, 50, 50; /* Adjusted text color for better contrast */
   --background-rgb: 0, 123, 255; /* Single background color */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --primary-color: 0, 123, 255; /* Adjust primary color */
+    --primary-color:#1B0D96; /* Adjust primary color */
     --foreground-rgb: 50, 50, 50; /* Adjusted text color for better contrast */
     --background-rgb: 0, 123, 255; /* Single background color */;
   }
@@ -25,14 +25,24 @@ body {
   font-family: 'Lato', sans-serif; /* Set font family to Lato */
   font-weight: 400; /* Adjust font weight */
 }
-.bg-primary{
-  background-color: #e86f13;
-  color: #fff;
+/* styles/globals.css */
+
+/* Loader styles */
+.loader {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #000;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
 }
-.bg-primary:hover {
-  background-color: #e86f13;
- 
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
+
 .scroll-to-top {
   position: fixed;
   bottom: 20px;

@@ -11,7 +11,7 @@ const LanguageSwitcher = () => {
     if (storedLang) {
       setLang(storedLang);
     }
-  }, []); // Run only once on component mount
+  }, []); 
 
   const handleChangeLanguage = (newLang) => {
     localStorage.setItem("lang", newLang);
