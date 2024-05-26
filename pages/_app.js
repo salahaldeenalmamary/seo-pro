@@ -1,38 +1,32 @@
-import Head from 'next/head';
-import {  Suspense, useEffect, useState } from 'react';
-import { circularProgressClasses } from '@mui/material';
-import InstallPrompt from '@/components/ui/InstallPrompt';
 import '@/styles/globals.css';
-
-// Define metadata
-const Metadata = {
-  manifest: '/manifest.json',
-  // Add other metadata properties as needed
-};
+import { motion } from 'framer-motion';
+import { Suspense, useState, useEffect } from 'react';
+import { CircularProgress } from '@mui/material';
+import InstallPrompt from '../components/ui/InstallPrompt';
 
 export default function App({ Component, pageProps }) {
   const [deferredPrompt, setDeferredPrompt] = useState(null);
 
   useEffect(() => {
     const handleBeforeInstallPrompt = (e) => {
+      console.log('beforeinstallprompt event fired');
       e.preventDefault();
       setDeferredPrompt(e);
     };
 
-    window.addEventListener("beforeinstallprompt", handleBeforeInstallPrompt);
+    window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
 
     return () => {
-      window.removeEventListener("beforeinstallprompt", handleBeforeInstallPrompt);
+      window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
     };
   }, []);
 
   return (
     <div className="bg-gray-50 text-black">
-      <Suspense fallback={<circularProgressClasses />}>
+      <Suspense fallback={<CircularProgress />}>
         <Component {...pageProps} />
       </Suspense>
       {deferredPrompt && <InstallPrompt deferredPrompt={deferredPrompt} />}
     </div>
   );
 }
-

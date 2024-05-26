@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Button from '@mui/material/Button';
 import Snackbar from '@mui/material/Snackbar';
-import { useState } from 'react';
+import { Box, Typography } from '@mui/material';
+import Image from 'next/image'; // Assuming you're using next/image for optimized images
 
 const InstallPrompt = ({ deferredPrompt }) => {
   const [open, setOpen] = useState(true);
@@ -27,7 +28,14 @@ const InstallPrompt = ({ deferredPrompt }) => {
       open={open}
       autoHideDuration={6000}
       onClose={handleClose}
-      message="Install this app for a better experience"
+      message={
+        <Box display="flex" alignItems="center">
+          <Image src="/logo.png" alt="App Logo" width={24} height={24} />
+          <Typography variant="body1" ml={1}>
+            Install this app for a better experience
+          </Typography>
+        </Box>
+      }
       action={
         <Button color="secondary" size="small" onClick={handleInstallClick}>
           INSTALL
